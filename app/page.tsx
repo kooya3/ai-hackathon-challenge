@@ -9,7 +9,7 @@ export default function Home() {
       {/* Hero */}
       <section>
         <div>
-          <div className="flex flex-col items-center gap-10">
+          <div className="flex flex-col items-center gap-10 text-center mb-12">
             <AgentPulse size="large" color="blue" />
 
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">Meet your personal {""}</h1>
