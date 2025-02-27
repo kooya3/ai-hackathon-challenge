@@ -132,8 +132,24 @@ export default function Home() {
             Meet Your AI Agent in 3 Simple Steps
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            {steps.map((step, index) => {
+              const Icon = step.icon;
 
+              return (
+                <div key={index} className="text-center p-6 rounded-xl bg-white shadow-md hover:shadow-lg transition-all">
+                  <div className="w-16 h-16 bg-gradient-to-r  from-blue-600 to-blue-400 rounded-full items-center justify-center mb-4">
+                    <Icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 ">
+                    {step.description}
+                  </p>
+                </div>
+              )
+            })}
           </div>
 
         </div>
