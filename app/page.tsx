@@ -86,7 +86,17 @@ export default function Home() {
               const Icon = feature.icon;
 
               return (
-                <div key={index}>
+                <div key={index} className="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition-all duration-300">
+                  <div>
+                    <Icon />
+                  </div>
+
+                  <h3>
+                    {feature.title}
+                  </h3>
+                  <p>
+                    {feature.description}
+                  </p>
 
                 </div>
               )
