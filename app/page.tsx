@@ -73,37 +73,37 @@ export default function Home() {
 
 
       {/* Features */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-white ">
+        <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex flex-col items-center gap-10 text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Powerful Features For Content Creators</h2>
             {/* <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Our AI Content Agent comes with a range of features to help you create better content faster.
             </p> */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* feature cards */}
+              {/* feature cards */}
 
-            {features.map((feature, index) => {
-              const Icon = feature.icon;
+              {features.map((feature, index) => {
+                const Icon = feature.icon;
 
-              return (
-                <div key={index} className="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition-all duration-300">
-                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${feature.iconBg}`}>
-                    <Icon />
+                return (
+                  <div key={index} className="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition-all duration-300">
+                    <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${feature.iconBg}`}>
+                      <Icon />
+                    </div>
+
+                    <h3 className="text-xl font-semibold mb-2">
+                      {feature.title}
+                    </h3>
+                    <p className="text-gray-600 ">
+                      {feature.description}
+                    </p>
+
                   </div>
 
-                  <h3 className="text-xl font-semibold mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600">
-                    {feature.description}
-                  </p>
-
-                </div>
-                
-              )
-            })}
-</div>
+                )
+              })}
+            </div>
           </div>
         </div>
       </section>
