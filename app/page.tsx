@@ -138,7 +138,7 @@ export default function Home() {
 
               return (
                 <div key={index} className="text-center p-6 rounded-xl bg-white shadow-md hover:shadow-lg transition-all">
-                  <div className="w-16 h-16 bg-gradient-to-r  from-blue-600 to-blue-400 rounded-full items-center justify-center mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-r  from-blue-600 to-blue-400 rounded-full flex items-center justify-center mb-4">
                     <Icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">
@@ -156,6 +156,16 @@ export default function Home() {
       </section>
 
       {/* Footer */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-400">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-white mb-6">
+            Ready to Meet Your AI Content Agent?
+            <p className="text-lg text-blue-50">
+              Join creators leveraging AI to unlock content insights
+            </p>
+          </h2>
+        </div>
+      </section>
 
     </div>
   );
