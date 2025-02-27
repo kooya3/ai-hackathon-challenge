@@ -82,6 +82,16 @@ export default function Home() {
             </p> */}
             {/* feature cards */}
 
+            {features.map((feature, index) => {
+              const Icon = feature.icon;
+
+              return (
+                <div key={index}>
+
+                </div>
+              )
+            })}
+
           </div>
         </div>
       </section>
