@@ -1,6 +1,31 @@
 import AgentPulse from "@/components/AgentPulse";
 import { Agent } from "http";
+import { Brain, ImageIcon, MessageSquare } from "lucide-react";
 import Image from "next/image";
+
+const features = [
+  {
+    title: "AI-Powered Analysis",
+    description: "Get AI-Powered insights to help you create better content faster. Understand viewer engagement and content quality",
+    icon: Brain,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-500",
+  },
+  {
+    title: "Smart Transcription",
+    description: "Transcribe your video content in minutes. Perfect for creating subtitles, blog posts, or repurposing content.",
+  icon: MessageSquare,
+  iconBg: "bg-green-100",
+  iconColor: "text-green-500",
+},
+{
+  title : "Thumbnail Generation",
+  description: "Create engaging thumbnails for your videos in minutes. AI-Powered image generation to help you stand out.",
+  icon: ImageIcon,
+  iconBg: "bg-purple-100",
+  iconColor: "text-purple-600",
+},
+  ]
 
 export default function Home() {
   return (
@@ -18,12 +43,27 @@ export default function Home() {
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Transform your Video content with AI. Our AI Content Agent will help you create engaging video content in minutes. AI-Powered analysis, transcription, and insights to help you create better content faster.
             </p>
+
+            {/* Youtube Video upload section */}
+            {/* <YoutubeVideoForm /> */}
           </div>
         </div>
       </section>
 
 
       {/* Features */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center gap-10 text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Powerful Features For Content Creators</h2>
+            {/* <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              Our AI Content Agent comes with a range of features to help you create better content faster.
+            </p> */}
+            {/* feature cards */}
+
+          </div>
+</div>
+</section>
 
       {/* CTA / how it works section*/}
 
