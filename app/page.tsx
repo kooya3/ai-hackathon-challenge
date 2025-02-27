@@ -1,4 +1,5 @@
 import AgentPulse from "@/components/AgentPulse";
+import YoutubeVideoForm from "@/components/YoutubeVideoForm";
 import { Agent } from "http";
 import { Brain, ImageIcon, MailPlus, MessageSquare, MessageSquareCode, Sparkles, Video } from "lucide-react";
 
@@ -83,7 +84,7 @@ export default function Home() {
             </p>
 
             {/* Youtube Video upload section */}
-            {/* <YoutubeVideoForm /> */}
+           <YoutubeVideoForm /> 
           </div>
         </div>
       </section>
