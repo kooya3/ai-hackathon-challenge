@@ -1,6 +1,6 @@
 import AgentPulse from "@/components/AgentPulse";
 import { Agent } from "http";
-import { Brain, ImageIcon, MessageSquare } from "lucide-react";
+import { Brain, ImageIcon, MailPlus, MessageSquare, Sparkles, Video } from "lucide-react";
 import Image from "next/image";
 
 const features = [
@@ -14,18 +14,39 @@ const features = [
   {
     title: "Smart Transcription",
     description: "Transcribe your video content in minutes. Perfect for creating subtitles, blog posts, or repurposing content.",
-  icon: MessageSquare,
-  iconBg: "bg-green-100",
-  iconColor: "text-green-500",
-},
-{
-  title : "Thumbnail Generation",
-  description: "Create engaging thumbnails for your videos in minutes. AI-Powered image generation to help you stand out.",
-  icon: ImageIcon,
-  iconBg: "bg-purple-100",
-  iconColor: "text-purple-600",
-},
-  ]
+    icon: MessageSquare,
+    iconBg: "bg-green-100",
+    iconColor: "text-green-500",
+  },
+  {
+    title: "Thumbnail Generation",
+    description: "Create engaging thumbnails for your videos in minutes. AI-Powered image generation to help you stand out.",
+    icon: ImageIcon,
+    iconBg: "bg-purple-100",
+    iconColor: "text-purple-600",
+  },
+  {
+    title: "Title Generation",
+    description: "Generate engaging titles for your videos in minutes. SEO optimized titles for your content using AI. Maximise views with titles that resonate with your audience.",
+    icon: MailPlus,
+    iconBg: "bg-yellow-100",
+    iconColor: "text-yellow-600",
+  },
+  {
+    title: "Shot Script Generation",
+    description: "Generate shot scripts for your videos in minutes. Perfect for planning your video content and creating engaging videos.",
+    icon: Video,
+    iconBg: "bg-red-100",
+    iconColor: "text-red-600",
+  },
+  {
+    title: "Discuss with Your Agent",
+    description: "Discuss your content with your AI Content Agent. Get feedback, suggestions, and ideas to help you create better content.",
+    icon: Sparkles,
+    iconBg: "bg-orange-100",
+    iconColor: "text-orange-600",
+  },
+];
 
 export default function Home() {
   return (
@@ -62,8 +83,8 @@ export default function Home() {
             {/* feature cards */}
 
           </div>
-</div>
-</section>
+        </div>
+      </section>
 
       {/* CTA / how it works section*/}
 
