@@ -10,7 +10,7 @@ function AnalyseButton() {
     <button
     type="submit"
     disabled={pending}
-    className="px-6 py-2"
+    className="px-6 py-2 text-white bg-blue-600 rounded-lg"
     >
 
     </button>
