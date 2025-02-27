@@ -109,6 +109,13 @@ export default function Home() {
       </section>
 
       {/* CTA / how it works section*/}
+      <section>
+        <div className="constainer mx-auto px-4 max-w-6xl">
+          <h2>
+Meet Your AI Agent in 3 Simple Steps
+          </h2>
+        </div>
+      </section>
 
       {/* Footer */}
 
