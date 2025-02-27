@@ -80,6 +80,7 @@ export default function Home() {
             {/* <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Our AI Content Agent comes with a range of features to help you create better content faster.
             </p> */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* feature cards */}
 
             {features.map((feature, index) => {
@@ -87,21 +88,22 @@ export default function Home() {
 
               return (
                 <div key={index} className="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition-all duration-300">
-                  <div>
+                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${feature.iconBg}`}>
                     <Icon />
                   </div>
 
-                  <h3>
+                  <h3 className="text-xl font-semibold mb-2">
                     {feature.title}
                   </h3>
-                  <p>
+                  <p className="text-gray-600">
                     {feature.description}
                   </p>
 
                 </div>
+                
               )
             })}
-
+</div>
           </div>
         </div>
       </section>
