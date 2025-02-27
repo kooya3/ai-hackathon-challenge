@@ -1,7 +1,24 @@
 import AgentPulse from "@/components/AgentPulse";
 import { Agent } from "http";
-import { Brain, ImageIcon, MailPlus, MessageSquare, Sparkles, Video } from "lucide-react";
-import Image from "next/image";
+import { Brain, ImageIcon, MailPlus, MessageSquare, MessageSquareCode, Sparkles, Video } from "lucide-react";
+
+const steps = [
+  {
+    title: "1. Upload Your Content",
+    description: "Upload your video content and let your agent get to work",
+    icon: Video,
+  },
+  {
+    title: "2. AI Agent Analysis",
+    description: "Your personal agent analyzes every aspect of your content",
+    icon: Brain,
+  },
+  {
+    title: "3. Receive Intelligence",
+    description: "Get actionable insights and strategic recommendations",
+    icon: MessageSquareCode,
+  },
+];
 
 const features = [
   {
@@ -109,11 +126,16 @@ export default function Home() {
       </section>
 
       {/* CTA / how it works section*/}
-      <section>
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="constainer mx-auto px-4 max-w-6xl">
-          <h2>
-Meet Your AI Agent in 3 Simple Steps
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Meet Your AI Agent in 3 Simple Steps
           </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          </div>
+
         </div>
       </section>
 
