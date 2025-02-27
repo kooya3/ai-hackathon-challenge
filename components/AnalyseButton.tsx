@@ -1,8 +1,19 @@
-import React from 'react'
+"use client"
 
-const AnalyseButton = () => {
+import { useFormStatus } from "react-dom"
+
+function AnalyseButton() {
+
+    const { pending } = useFormStatus();
+
   return (
-    <div>AnalyseButton</div>
+    <button
+    type="submit"
+    disabled={pending}
+    className="px-6 py-2"
+    >
+
+    </button>
   )
 }
 
